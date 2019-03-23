@@ -13,7 +13,7 @@ describe('/GET', () => {
             .get('/who')
             .end((err, res) => {
                 res.should.have.status(200);
-                res.text.should.contain('Find Out About Us');
+                res.text.should.contain('Find Out About Monkeys');
                 done();
             });
     });
