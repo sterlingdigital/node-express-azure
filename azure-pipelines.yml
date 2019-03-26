@@ -24,6 +24,18 @@ steps:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
 
+- task: SonarSource.sonarqube.15B84CA1-B62F-4A2A-A403-89B77A063157.SonarQubePrepare@4
+  displayName: 'Prepare analysis on SonarQube'
+  inputs:
+    SonarQube: 'SonarCloud'
+    projectKey: 3433434SDJASDJLASKDFJLASDFJLSAD
+    projectName: Node-Express-App
+    projectVersion: '$(AssemblyVersion)'
+    extraProperties: |
+     sonar.organization=damian-rosewarne33997
+     sonar.branch.name=$(Build.SourceBranchName)
+
+
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifacts: drop'
   
