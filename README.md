@@ -2,7 +2,7 @@ EDITED
 
 # Node & Express Demo App for Azure DevOps
 
-UPDATED FOR BUILD TEST!!
+<img src="https://dev.azure.com/sterlinggroup/Node-Express-App/_apis/build/status/sterlingdigital.node-express-azure?branchName=master">
 
 > Build Your First CI/CD Pipeline using Azure DevOps with this Demo App.
 
